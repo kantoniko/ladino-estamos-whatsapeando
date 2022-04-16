@@ -17,6 +17,7 @@ def get_messages():
             raise Exception(f"sound file {ogg_filename} does not exist")
         ogg_files.remove(ogg_filename)
         data['filename'] = ogg_filename
+        data['page'] = yaml_filename.replace('.yaml', '')
         #print(data['text'])
         data['text'] = data['text'].strip()
         entries.append(data)
