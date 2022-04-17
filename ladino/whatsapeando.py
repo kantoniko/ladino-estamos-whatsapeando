@@ -1,4 +1,5 @@
 from yaml import safe_load
+import re
 import os
 
 def get_messages():
@@ -21,6 +22,8 @@ def get_messages():
         #print(data['text'])
         data['text'] = data['text'].strip()
         entries.append(data)
+        assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['data'], re.ASCII)
+        assert len(data['titulo']) > 5
     if ogg_files:
         raise Exception(f"Some sound files {ogg_files} are not in use")
 
