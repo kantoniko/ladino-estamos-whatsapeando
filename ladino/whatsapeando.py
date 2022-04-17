@@ -23,6 +23,7 @@ def get_messages():
         data['text'] = data['text'].strip()
         entries.append(data)
         assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['data'], re.ASCII)
+        assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['pub'], re.ASCII)
         assert len(data['titulo']) > 5
     if ogg_files:
         raise Exception(f"Some sound files {ogg_files} are not in use")
@@ -33,4 +34,5 @@ def get_messages():
 if __name__ == '__main__':
     entries = get_messages()
     #print(entries)
+    print("All read properly")
 
