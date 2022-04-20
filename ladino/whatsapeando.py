@@ -34,11 +34,11 @@ def get_messages():
     if ogg_files:
         raise Exception(f"Some sound files {ogg_files} are not in use")
 
-    return entries
+    return sorted(entries, key=lambda entry: entry['pub'])
 
 
 if __name__ == '__main__':
     entries = get_messages()
     #print(entries)
-    print("All read properly")
+    print(f"All read properly. Last published: {entries[-1]['pub']}")
 
