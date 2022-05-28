@@ -21,8 +21,17 @@ def get_messages():
         data['filename'] = ogg_filename
         data['page'] = yaml_filename.replace('.yaml', '')
         #print(data['text'])
-        data['text'] = data['text'].strip()
-        entries.append(data)
+        if 'text' in data:
+            data['teksto'] = [{
+                'ladino': data['text'].strip(),
+                'ebreo': '',
+            }]
+            entries.append(data)
+        elif 'teksto' in data:
+            entries.append(data)
+        else:
+            raise Exception('No text and no teksto')
+
         assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['data'], re.ASCII)
         assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['pub'], re.ASCII)
 
