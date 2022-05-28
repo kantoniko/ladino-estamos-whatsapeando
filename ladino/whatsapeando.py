@@ -33,7 +33,9 @@ def get_messages():
             raise Exception('No text and no teksto')
 
         assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['data'], re.ASCII)
-        assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['pub'], re.ASCII)
+        match = re.search(r'^(\d\d\d\d\.\d\d\.\d\d)( \d\d:\d\d:\d\d)?$', data['pub'], re.ASCII)
+        assert match
+        data['date'] = match.group(1)
 
         if data['pub'] in pubs:
             raise Exception(f"Duplicate publication date {data['pub']}")
