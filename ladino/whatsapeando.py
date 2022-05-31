@@ -1,4 +1,5 @@
 from yaml import safe_load
+import datetime
 import re
 import os
 
@@ -51,5 +52,7 @@ def get_messages():
 if __name__ == '__main__':
     entries = get_messages()
     #print(entries)
-    print(f"All read properly. Last published: {entries[-1]['pub']}")
+    print(f"All read properly.")
+    print(f"Last published:   {entries[-1]['pub']}")
+    print(f"Today is          {str(datetime.date.today()).replace('-', '.')}")
 
