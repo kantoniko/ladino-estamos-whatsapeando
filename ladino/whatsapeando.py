@@ -29,6 +29,9 @@ def get_messages():
             }]
             entries.append(data)
         elif 'teksto' in data:
+            for entry in data['teksto']:
+                assert 'ladino' in entry, f"ladino field is missing in file {yaml_filename}"
+                assert 'ebreo' in entry, f"ebreo field is missing in file {yaml_filename}"
             entries.append(data)
         else:
             raise Exception('No text and no teksto')
