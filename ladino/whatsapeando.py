@@ -11,6 +11,7 @@ def get_messages():
     #print(yaml_files)
     ogg_files = set(os.listdir(os.path.join(root, 'sound')))
     #print(ogg_files)
+    img_files = set(os.listdir(os.path.join(root, 'img')))
     pubs = set()
     for yaml_filename in yaml_files:
         with open(os.path.join(root, 'text', yaml_filename)) as fh:
@@ -21,6 +22,9 @@ def get_messages():
         ogg_files.remove(ogg_filename)
         data['filename'] = ogg_filename
         data['page'] = yaml_filename.replace('.yaml', '')
+        img_filename = yaml_filename.replace('.yaml', '.jpeg')
+        if img_filename in img_files:
+            data['img'] = img_filename
         #print(data['text'])
         if 'text' in data:
             data['teksto'] = [{
