@@ -3,6 +3,12 @@ import datetime
 import re
 import os
 
+skip_image = [
+    'akel-tyempo-akeya-noche-en-izmir.jpeg',
+    'akel-tyempo-yossi-banay.jpeg',
+    'akel-tyempo-la-sinyatura-de-hitler.jpeg',
+]
+
 def get_messages():
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     #print(root)
@@ -16,15 +22,23 @@ def get_messages():
     for yaml_filename in yaml_files:
         with open(os.path.join(root, 'text', yaml_filename)) as fh:
             data = safe_load(fh)
+
         ogg_filename = yaml_filename.replace('.yaml', '.ogg')
         if ogg_filename not in ogg_files:
             raise Exception(f"sound file {ogg_filename} does not exist")
         ogg_files.remove(ogg_filename)
         data['filename'] = ogg_filename
+
         data['page'] = yaml_filename.replace('.yaml', '')
+
         img_filename = yaml_filename.replace('.yaml', '.jpeg')
         if img_filename in img_files:
             data['img'] = img_filename
+            img_files.remove(img_filename)
+        elif img_filename not in skip_image:
+            raise Exception(f"img file {img_filename} does not exist")
+            #print(f"img file {img_filename} does not exist")
+
         #print(data['text'])
         if 'text' in data:
             data['teksto'] = [{
@@ -52,6 +66,8 @@ def get_messages():
         assert len(data['titulo']) > 5
     if ogg_files:
         raise Exception(f"Some sound files {ogg_files} are not in use")
+    if img_files:
+        raise Exception(f"Some img files {img_files} are not in use")
 
     return sorted(entries, key=lambda entry: entry['pub'])
 
