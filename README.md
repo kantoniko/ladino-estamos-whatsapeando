@@ -1,6 +1,6 @@
 # Estamos Whatsapeando
 
-See the content of [Estamos Whatsapeando](https://diksionaryo.szabgab.com/)
+See the content of [Estamos Whatsapeando](https://kantoniko.com/)
 
 Copyright of the sound and text files: Albert Israel 2022
 
