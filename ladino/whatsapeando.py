@@ -77,7 +77,7 @@ def get_messages():
             raise Exception(f"Duplicate publication date {data['pub']}")
         pubs.add(data['pub'])
 
-        assert len(data['titulo']) > 5
+        assert len(data['titulo']) > 4
     if ogg_files:
         raise Exception(f"Some sound files {ogg_files} are not in use")
     if img_files:
