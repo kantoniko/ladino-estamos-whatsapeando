@@ -58,9 +58,20 @@ def get_messages():
             raise Exception('No text and no teksto')
 
         assert re.search(r'^\d\d\d\d\.\d\d\.\d\d$', data['data'], re.ASCII)
+        try:
+            datetime.datetime.strptime(data['data'], '%Y.%m.%d')
+        except ValueError:
+            exit(f"Invalid date {data['data']}")
+
         match = re.search(r'^(\d\d\d\d\.\d\d\.\d\d)( \d\d:\d\d:\d\d)?$', data['pub'], re.ASCII)
         assert match
         data['date'] = match.group(1)
+
+        try:
+            datetime.datetime.strptime(data['date'], '%Y.%m.%d')
+        except ValueError:
+            exit(f"Invalid date {data['pub']}")
+
 
         if data['pub'] in pubs:
             raise Exception(f"Duplicate publication date {data['pub']}")
