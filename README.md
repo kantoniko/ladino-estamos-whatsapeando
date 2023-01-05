@@ -39,3 +39,17 @@ The reson the last pablished is in the future is that every article must on its 
 * Right-clkick "save image as" them nove that image to  `img/` using the same filename as the `.yaml` file, but with `.jpeg` extension.
 * Right-click on the .ogg file and "Save link as". Move the .ogg file to `sound/`   with the same name and `.ogg` extension.
 
+
+## Merging sound files
+
+Sometimes the sound is split into two files. This can merge them:
+
+```
+opusdec a.ogg a.wav
+opusdec b.ogg b.wav
+sox a.wav b.wav c.ogg
+```
+
+
+
+
