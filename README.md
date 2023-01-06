@@ -31,7 +31,7 @@ Last published:   2023.05.14 - Akel tyempo - Musa Moiz Eskenazi 15
 Today is          2023.01.05
 ```
 
-The reson the last pablished is in the future is that every article must on its own day (an arbitrary restriction we use to make sorting easy) and we have publish old message with futurre dates. New messages should be published with dates after the "Last published". As Albert does not publish every day, after a few months we'll catch up and we'll be able to use the same date as the original post.
+The "Last published" started out as a real date, but now it is just counter. New messages should be published with dates after the "Last published". As Albert does not publish every day, after a few months we'll catch up and we'll be able to use the same date as the original post.
 
 
 * Vist the page in the archive of Ladinokomunita: [page](https://ladinokomunita.groups.io/g/main/message/68773)
