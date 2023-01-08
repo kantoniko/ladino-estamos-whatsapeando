@@ -3,11 +3,13 @@ data: 2021.10.14
 pub: 2023.01.21
 source: https://ladinokomunita.groups.io/g/main/message/66580
 
-text: |
- Akel tyempo...
+teksto:
+  - ladino: Akel tyempo...
+    ebreo: בזמנים ההם...
+  - ladino: 'Almaryo de buz (Buzdolabı):'
+    ebreo: 'מקרר קרח:'
+  - ladino: Dospues vino el almaryo de buz. Arriva se metiya el buz, enmedyo las komidas i abasho aviya el kashon para empleyar la agua derritida. El buz viniya kon araba de kavayos.
+    ebreo: אחר כך בא מקרר קרח. למעלה היו שמים קרח, באמצע מאכלים ולמטה הייתה המגירה בכדי להשתמש במי קרח שנמסו. הקרח היה מגיע בעגלה עם סוסים... 
+  - ladino: Avyerto el kashon, envitado el ladron.
+    ebreo: מגירה פתוחה הזמנה לגנב.
 
- Almaryo de buz (Buzdolabı):
-
- Dospues vino el almaryo de buz. Arriva se metiya el buz, enmedyo las komidas i abasho aviya el kashon para empleyar la agua derritida. El buz viniya kon araba de kavayos.
-
- Avyerto el kashon, envitado el ladron.
