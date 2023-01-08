@@ -3,10 +3,13 @@ data: 2021.09.29
 pub: 2023.01.27
 source:
 
-text: |
- Akel tyempo...
+teksto:
+  - ladino: Akel tyempo...
+    ebreo: בזמנים ההם...
+  - ladino: 'Alevantar:'
+    ebreo: 'לקום:'
+  - ladino: Kuando el profesor entrava a la klasa los elevos se alavantavan enpyes. El dia ke se eskapo el uzo de alevantar, muryo la onor del profesor...
+    ebreo: כאשר המורה היה נכנס לכיתה התלמידים היו קמים על רגליהם. ביום שנגמר הנוהג של קימה, מת הכבוד של המורה... 
+  - ladino: Dar es onor, demandar es dolor.
+    ebreo: לתת זה כבוד, לבקש זה כאב.
 
- Alevantar:
- Kuando el profesor entrava a la klasa los elevos se alavantavan enpyes. El dia ke se eskapo el uzo de alevantar, muryo la onor del profesor...
-
- Dar es onor, demandar es dolor.
