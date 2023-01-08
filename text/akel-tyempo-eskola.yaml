@@ -3,11 +3,13 @@ data: 2021.09.13
 pub: 2023.01.30
 source: https://ladinokomunita.groups.io/g/main/message/66400
 
-text: |
- Akel tyempo...
-
- Eskola:
- A los ijikos, moz vistiyan fostanes pretos kon kolares blankos. No se yo komo salimoz seksualmente normal...
-
- Korrer detras del fostan.
+teksto:
+  - ladino: Akel tyempo...
+    ebreo: בזמנים ההם...
+  - ladino: 'Eskola:'
+    ebreo: 'בית ספר:'
+  - ladino: A los ijikos, moz vistiyan fostanes pretos kon kolares blankos. No se yo komo salimoz seksualmente normal...
+    ebreo: את הבנים, היו מלבישים אותנו בשמלות שחורות וצווארון לבן. אני לא יודע איך יצאנו נורמלים מבחינה מינית. 
+  - ladino: Korrer detras del fostan.
+    ebreo: לרוץ אחרי השמלה. (לרדוף שמלות)
 
