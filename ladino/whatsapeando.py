@@ -90,6 +90,6 @@ if __name__ == '__main__':
     entries = get_messages()
     #print(entries)
     print(f"All read properly.")
-    print(f"Last published:   {entries[-1]['pub']} - {entries[-1]['titulo']}")
+    print(f"Last published:   {entries[-1]['pub']} - {entries[-1]['titulo']} {entries[-1]['filename'].replace('ogg','yaml')}")
     print(f"Today is          {str(datetime.date.today()).replace('-', '.')}")
 
