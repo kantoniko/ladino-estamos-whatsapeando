@@ -9,6 +9,11 @@ Copyright of the code: Gabor Szabo 2023
 License: [Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 
+## GitHub pages
+
+The root directory of this project is published as "GitHub pages" on the URL https://whatsapeando.kantoniko.com
+The WhatsApp pages will use the ogg and jpeg files hosted on this URL.
+
 ## Adding entry
 
 ```
