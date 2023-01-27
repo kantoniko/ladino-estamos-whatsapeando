@@ -11,16 +11,27 @@ License: [Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND
 
 ## Adding entry
 
+```
+git clone git@github.com:kantoniko/ladino-estamos-whatsapeando.git
+git@github.com:kantoniko/ladino-diksionaryo-code.git
+```
+
 Installing Python requirements
 
 ```
-pip install -r requirements.txt
+pip install -r ../ladino-diksionaryo-code/requirements.txt
 ```
 
 The following command will check the entries:
 
 ```
-python ladino/whatsapeando.py
+./check.sh
+```
+
+or:
+
+```
+python ../ladino-diksionaryo-code/ladino/whatsapeando.py .
 ```
 
 Successful result will look like this:
