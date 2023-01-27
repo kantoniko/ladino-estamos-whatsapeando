@@ -13,14 +13,23 @@ jobs:
     steps:
     - name: Checkout this repo
       uses: actions/checkout@v3
+      with:
+        path: ladino-estamos-whatsapeando
+
+    - name: Checkout the ladino-diksionaryo-code
+      uses: actions/checkout@v3
+      with:
+        repository: 'kantoniko/ladino-diksionaryo-code'
+        path: ladino-diksionaryo-code
 
     - name: Install dependencies
       run: |
-          pip install -r requirements.txt
+          pip install -r ladino-diksionaryo-code/requirements.txt
 
     - name: Run tests
       run: |
-          python ladino/whatsapeando.py
+          cd ladino-estamos-whatsapeando
+          ./check.sh
 
   generate:
     runs-on: ubuntu-latest
