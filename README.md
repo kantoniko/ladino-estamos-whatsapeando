@@ -50,9 +50,18 @@ Today is          2023.01.05
 The "Last published" started out as a real date, but now it is just counter. New messages should be published with dates after the "Last published". As Albert does not publish every day, after a few months we'll catch up and we'll be able to use the same date as the original post.
 
 
-* Vist the page in the archive of Ladinokomunita: [page](https://ladinokomunita.groups.io/g/main/message/68773)
-* Copy `skeleton.yaml` to `text/` basing the name of the file on the title.
-* Right-clkick "save image as" them nove that image to  `img/` using the same filename as the `.yaml` file, but with `.jpeg` extension.
+* Vist the page in the archive of Ladinokomunita: [topic](https://ladinokomunita.groups.io/g/main/topics) and find the post by Albert. For example [this post](https://ladinokomunita.groups.io/g/main/message/68773)
+* Copy `skeleton.yaml` to `text/` basing the name of the file on the title. We prefer the version where each line has its own translation.
+    The single `text` entry was for the messages where we did not have the Hebrew translation as they were sent before I joined the WhatsApp group.
+```
+teksto:
+  - ladino:
+    ebreo:
+  - ladino:
+    ebreo:
+```
+* Copy the text from the WhatsApp message.
+* Right-click "save image as" them nove that image to  `img/` using the same filename as the `.yaml` file, but with `.jpeg` extension.
 * Right-click on the .ogg file and "Save link as". Move the .ogg file to `sound/`   with the same name and `.ogg` extension.
 
 
