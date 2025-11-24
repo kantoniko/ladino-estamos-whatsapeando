@@ -12,12 +12,12 @@ jobs:
     name: Test code
     steps:
     - name: Checkout this repo
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         path: ladino-estamos-whatsapeando
 
     - name: Checkout the ladino-diksionaryo-code
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         repository: 'kantoniko/ladino-diksionaryo-code'
         path: ladino-diksionaryo-code
